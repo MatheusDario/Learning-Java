@@ -1,11 +1,11 @@
-package exercicios;
+package about_arrays.exercicios;
 
 import java.util.Scanner;
 
 public class Persionato {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        RentedRoom[] rentedRoom = new RentedRoom[10];
+        RentedRoom[] rentedRoom = new about_arrays.exercicios.RentedRoom[10];
         String name, email;
         int roomQuantity, roomId;
         boolean flag;
@@ -33,11 +33,11 @@ public class Persionato {
             System.out.print("Room: ");
             roomId = sc.nextInt();
 
-            rentedRoom[roomId] = new RentedRoom(name, email, roomId);
+            rentedRoom[roomId] = new about_arrays.exercicios.RentedRoom(name, email, roomId);
         }
 
         System.out.println("\nBusy rooms: ");
-        for(RentedRoom room : rentedRoom) {
+        for(about_arrays.exercicios.RentedRoom room : rentedRoom) {
             if(room != null) {
                 System.out.println(room);
             }

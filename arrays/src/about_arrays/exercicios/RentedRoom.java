@@ -1,4 +1,4 @@
-package exercicios;
+package about_arrays.exercicios;
 
 public class RentedRoom {
     private String nome;

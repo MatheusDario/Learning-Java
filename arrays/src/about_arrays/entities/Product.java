@@ -1,4 +1,4 @@
-package entities;
+package about_arrays.entities;
 
 public class Product {
     private String name;
