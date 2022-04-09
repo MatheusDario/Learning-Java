@@ -21,5 +21,9 @@ public class Program {
         Account acc3 = new BusinessAccount(1003, "Anna", 1000.0, 100.0);
         acc3.withDraw(200.0);
         System.out.println(acc3.getBalance());
+
+        BusinessAccount acc4 = new BusinessAccount(1004, "Pedro", 1000.0, 100.0);
+        acc4.loan(90);
+        System.out.println(acc4.getBalance());
     }
 }
