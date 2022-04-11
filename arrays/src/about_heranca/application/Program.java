@@ -1,8 +1,8 @@
-package heranca.application;
+package about_heranca.application;
 
-import heranca.entities.Account;
-import heranca.entities.BusinessAccount;
-import heranca.entities.SavingsAccount;
+import about_heranca.entities.Account;
+import about_heranca.entities.BusinessAccount;
+import about_heranca.entities.SavingsAccount;
 
 import java.util.Locale;
 

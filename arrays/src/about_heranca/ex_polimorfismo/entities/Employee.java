@@ -1,4 +1,4 @@
-package heranca.ex_polimorfismo.entities;
+package about_heranca.ex_polimorfismo.entities;
 
 public class Employee {
 

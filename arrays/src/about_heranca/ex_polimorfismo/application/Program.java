@@ -1,7 +1,7 @@
-package heranca.ex_polimorfismo.application;
+package about_heranca.ex_polimorfismo.application;
 
-import heranca.ex_polimorfismo.entities.Employee;
-import heranca.ex_polimorfismo.entities.OutSourcedEmployee;
+import about_heranca.ex_polimorfismo.entities.Employee;
+import about_heranca.ex_polimorfismo.entities.OutSourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;
