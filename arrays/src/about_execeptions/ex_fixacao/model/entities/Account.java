@@ -1,5 +1,7 @@
 package about_execeptions.ex_fixacao.model.entities;
 
+import about_execeptions.ex_fixacao.model.exceptions.DomainException;
+
 public class Account {
     private Integer number;
     private String holder;
@@ -41,7 +43,13 @@ public class Account {
         balance += amount;
     }
 
-    public void withdraw (Double amount) {
+    public void withdraw (Double amount) throws DomainException {
+        if(amount > withdrawLimit) {
+            throw new DomainException("The amount exceeds withdraw limit");
+        }
+        if(amount > balance) {
+            throw new DomainException("Not enough balance");
+        }
         balance -= amount;
     }
 }
