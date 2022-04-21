@@ -3,11 +3,11 @@ package about_files.application;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
+
 
 public class Program {
     public static void main(String[] args) {
-        String path = "/home/matheus/Documents/Files-course-java-udemy/file.txt";
+        String path = "/home/matheus/Documents/Files-course-java-udemy/file2.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
            String line = br.readLine();
