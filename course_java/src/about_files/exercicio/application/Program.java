@@ -16,12 +16,17 @@ public class Program {
         List<Product> list = new ArrayList<>();
 
         System.out.println("Enter file path: ");
-        String sourceFolderStr = sc.nextLine();
+        String sourceFileStr = sc.nextLine();
+
+        File sourceFile = new File(sourceFileStr);
+        String sourceFolderStr = sourceFile.getParent();
 
         boolean success = new File(sourceFolderStr + "/out").mkdir();
+
         String targetFileStr = sourceFolderStr + "/out/summary.csv";
 
-        try(BufferedReader br = new BufferedReader(new FileReader(sourceFolderStr))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFileStr))) {
+
             String itemCsv = br.readLine();
             while (itemCsv != null) {
 
@@ -52,5 +57,6 @@ public class Program {
             System.out.println("Error reading file: " + e.getMessage());
         }
 
+        sc.close();
     }
 }
