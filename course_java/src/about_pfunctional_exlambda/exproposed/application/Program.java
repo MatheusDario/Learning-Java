@@ -39,11 +39,11 @@ public class Program {
             emails.forEach(System.out::println);
 
             Double sum = employees.stream()
-                            .filter(emp -> emp.getName().charAt(0) == 'A')
+                            .filter(emp -> emp.getName().charAt(0) == 'M')
                                     .map(emp -> emp.getSalary())
                                             .reduce(0.0, (x,y) -> x +y );
 
-            System.out.println("Sum of salary of people whose name starts with 'A': " + sum);
+            System.out.println("Sum of salary of people whose name starts with 'M': " + sum);
 
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
